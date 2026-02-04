@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f0f2f5;
+    min-height:100vh;
+}
+
+ .container{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    padding:20px;
+}
+
+@media (min-width:900px){
+    .container{
+        flex-direction:row;
+        gap:80px;
+    }
+}
+
+ .info-side{
+    max-width:500px;
+    text-align:center;
+}
+
+.logo-text{
+    font-size:55px;
+    color:#1877f2;
+    margin-bottom:10px;
+}
+
+.info-text{
+    font-size:24px;
+    color:#1c1e21;
+}
+
+ .form-side{
+    width:100%;
+    max-width:330px;
+    text-align:center;
+}
+
+.form-card{
+    background:#fff;
+    padding:16px;
+    border-radius:8px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.input-field input{
+    width:100%;
+    padding:14px;
+    margin-bottom:12px;
+    border-radius:6px;
+    border:1px solid #ddd;
+    font-size:16px;
+}
+
+.input-field input:focus{
+    outline:none;
+    border-color:#1877f2;
+}
+
+ .login-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:6px;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    background:#1877f2;
+    color:#fff;
+    margin-bottom:12px;
+}
+
+.login-btn:hover{
+    background:#388af5;
+}
+
+.create-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:6px;
+    font-size:17px;
+    cursor:pointer;
+    background:#42b72a;
+    color:#fff;
+    margin-top:12px;
+}
+
+.create-btn:hover{
+    background:#36a420;
+}
+
+ .forgot-link a{
+    font-size:14px;
+    text-decoration:none;
+    display:block;
+    margin-bottom:12px;
+}
+
+.forgot-link a:hover{
+    text-decoration:underline;
+}
+
+.separator{
+    height:1px;
+    background:#ddd;
+    margin:12px 0;
+}
+
+ .page-note{
+    margin-top:12px;
+    font-size:11px;
+}
+
+.page-note a{
+    text-decoration:none;
+    color:#1c1e21;
+}
+
+.page-note a:hover{
+    text-decoration:underline;
+}

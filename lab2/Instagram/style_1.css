@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body{
+    height: 100%;
+    margin:0;
+    padding:0;
+    background:#000;
+}
+
+.wrapper{
+    display:flex;
+    flex-direction:column;
+    min-height:100%;
+}
+
+ 
+.intro{
+    background:#101010;
+    height:15vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.logo-img{
+    width:70px;
+    height:70px;
+}
+
+ 
+.visual-line{
+    height:2px;
+    background:#273441;
+}
+
+ 
+.login-section{
+    flex:1;  
+    background:#0f1c24;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding:40px 20px;
+}
+
+ .login-card{
+    width:100%;
+    max-width:400px;
+    color:aliceblue;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:20px;
+}
+
+.title-text{
+    width:100%;
+    font-size:14px;
+}
+
+ .image-block{
+    display:none;
+    text-align:center;
+}
+
+.image-block h1{
+    color:#ffffff;
+}
+
+.image-block span{
+    background:linear-gradient(45deg,#ff7a18,#ff2bdc);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+ .login-card input{
+    width:93%;
+    border-radius:17px;
+    padding:20px;
+    font-size:15px;
+    border:1px solid #273441;
+    background:#0f1c24;
+    color:#273441;
+    margin-top:15px;
+}
+
+.login-card input:hover{
+    border-color:aliceblue;
+}
+
+ .login-card button{
+    width:100%;
+    margin-top:20px;
+    padding:10px;
+    border-radius:20px;
+    min-height:48px;
+    font-size:16px;
+}
+
+.primary-btn{
+    background:#2d4e9d;
+    color:#7a7a7a;
+    cursor:not-allowed;
+}
+
+.link-btn{
+    background:#0f1c24;
+    color:#fff;
+    border:1px solid #0f1c24;
+    cursor:pointer;
+}
+
+.link-btn:hover{
+    background:#1d2f3a;
+    border:1px solid #273441;
+}
+
+.facebook-btn{
+    background:#0f1c24;
+    border:2px solid #273441;   
+    color:#fff;
+    cursor:pointer;
+}
+
+.facebook-btn:hover{
+    background:#1d2f3a;
+}
+
+.create-btn{
+    background:#0f1c24;
+    border:2px solid #4270dd;  
+    color:#4270dd;
+    cursor:pointer;
+}
+
+.create-btn:hover{
+    background:#1d2f3a;
+}
+
+.fb-img{
+    width:14px;
+    height:13px;
+}
+
+.meta-img{
+    width:60px;
+    height:60px;
+    margin-top:20px;
+}
+
+ @media(min-width:1100px){
+    .wrapper{
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+
+    .intro{
+        width:55%;
+        height:85vh;
+        justify-content:flex-start;
+        align-items:flex-start;
+    }
+
+    .login-section{
+        width:45%;
+        height:85vh;
+    }
+
+    .image-block{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-self:flex-end;
+        width:70%;
+        height:70%;
+    }
+
+    .visual-line{
+        width:2px;
+        height:85vh;
+    }
+}
