@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function pow(x,n){
+            let res = x;
+            for (let i = 1; i < n; i++){
+                res = res * x;
+            }
+            return res;
+        }
+
+        let x = prompt('Enter x: ', '');
+        let n = prompt('Enter n : ', '');
+        if (n < 1){
+            alert(`Power ${n} is less than or equal to 1, enter number greater than 1`);
+        } else {
+            alert(pow(x,n));
+        }
+    </script>
+</body>
+</html>
