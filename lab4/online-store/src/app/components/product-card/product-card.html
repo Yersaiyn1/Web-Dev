@@ -1,0 +1,27 @@
+<div class="card">
+
+    <a [href]="product.link" target="_blank">
+        <img [src]="product.image" [alt]="product.name" class="card-img" />
+    </a>
+
+    <div class="card-body">
+        <h3 class="card-tittle">
+            {{product.name}}
+        </h3>
+        <p class="card-desc">{{ product.description }}</p>
+
+    <div class="card-rating">
+       <span class="stars">{{ getStars(product.rating) }}</span>
+      <span class="rating-num">{{ product.rating }}</span>
+    </div>
+
+     <p class="card-price">{{ product.price | number }} ₸</p>
+
+    <div class="card-actions">
+      <a [href]="product.link" target="_blank" class="btn-buy">Купить</a>
+
+       <button (click)="shareOnWhatsApp()" class="btn-share whatsapp">WhatsApp</button>
+      <button (click)="shareOnTelegram()" class="btn-share telegram">Telegram</button>
+    </div>
+    </div>
+</div>
