@@ -1,1 +1,40 @@
-<app-product-list></app-product-list>
+
+<div class="app-container">
+  <header class="app-header">
+    <h1>Online Store</h1>
+    <p>Your favorite electronics at best prices</p>
+  </header>
+
+  <div class="main-content">
+
+    <aside class="categories-sidebar">
+      <h2>Categories</h2>
+      <div class="categories-list">
+        <button
+          *ngFor="let category of categories"
+          class="category-btn"
+          [class.active]="selectedCategoryId === category.id"
+          (click)="selectCategory(category.id)"
+        >
+          {{ category.name }}
+        </button>
+      </div>
+    </aside>
+
+
+    <main class="products-area">
+      <div *ngIf="selectedCategoryId === null; else productsList" class="welcome-message">
+        <h2>Welcome to our store!</h2>
+        <p>Please select a category to view products</p>
+      </div>
+
+      <ng-template #productsList>
+        <app-product-list
+          [products]="products"
+          (deleteProduct)="onDeleteProduct($event)"
+          (likeProduct)="onLikeProduct($event)"
+        ></app-product-list>
+      </ng-template>
+    </main>
+  </div>
+</div>
